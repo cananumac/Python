@@ -9,6 +9,14 @@ for key in my_d.keys():
 
 if -10 not in my_d:    # -10 my_d içerisinde değilse eklenmesini sağlıyor
     my_d[-10]=50
+
+
+def lookup(d,v):          # Girilen değerin sözlükte olup olmadığını kontrol eden fonksiyon
+    for key in d:
+        if d[key]==v:
+            return key
+        else:
+            return -1
     
 --------------------------------------------------------------------------------------------------------------
 
