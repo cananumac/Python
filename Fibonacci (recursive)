@@ -1,0 +1,16 @@
+def fib_rec(n):
+    if n<2:
+        return n
+    else:
+        return fib_rec(n-1)+fib_rec(n-2)
+        
+--------------------------------------------------
+
+known={0:0,1:1}
+def fib_rec(n):
+    if n in known:
+        return known[n]
+    else:
+        result=fib_rec(n-1)+fib_rec(n-2)
+        known[n]=result
+        return result
