@@ -1,0 +1,31 @@
+# Bilgisayarda bulunan bir dosyayı okuma ve alt alta ekrana yazdırma
+
+import os
+os.getcwd()
+my_list=[]
+my_file=u"C:\\Users\\Canan\\Desktop\\data.txt"
+f=open(my_file,"r+")
+contents= f.readlines()
+#print(contents)
+for line in contents:
+    #print(line)
+    words= line.split(" ")
+    for word in words:
+        print(word)
+        my_list.append(word)
+f.close()
+
+----------------------------------------------------------------------
+#Dosya içinde bulunan kelimelerin tekrar sayısını ekrana yazdırma
+
+my_hist={}
+for w in my_list:
+    if w in my_hist.keys():
+        my_hist[w]=my_hist[w]+1
+    else:
+        my_hist[w]=1
+my_hist
+
+
+
+
