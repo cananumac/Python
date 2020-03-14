@@ -3,7 +3,7 @@
 import os
 os.getcwd()
 my_list=[]
-my_file=u"C:\\Users\\Canan\\Desktop\\data.txt"
+my_file=u"C:\\Users\\Username\\Desktop\\filename.txt"
 f=open(my_file,"r+")
 contents= f.readlines()
 #print(contents)
